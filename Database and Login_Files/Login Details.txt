@@ -1,0 +1,10 @@
+-----------Inventory Management System-------------
+Database Name - inventory_management 
+
+New Admin Register -  localhost/inventory_management/register.php
+
+Login Credential - Bohra
+Password - 123456
+
+
+Designed By - Burhanuddin Bohra 

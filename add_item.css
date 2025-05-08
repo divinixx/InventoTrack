@@ -1,0 +1,76 @@
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            background-color: #6F6486;
+            max-width: 600px;
+            margin: 20px auto; 
+            padding: 20px;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            display: grid;
+            grid-gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .input-pair {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            grid-gap: 10px;
+            align-items: center;
+        }
+
+        .input-pair label {
+            text-align: right;
+            padding-right: 10px;
+            line-height: 30px; 
+        }
+
+        .input-pair input[type="text"],
+        .input-pair input[type="number"],
+        .input-pair input[type="file"],
+        .input-pair textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-pair input[type="file"] {
+            width: auto; 
+        }
+
+        .input-container input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .input-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .input-pair {
+                grid-template-columns: 1fr; 
+            }
+
+            .input-pair label {
+                text-align: left;
+                padding-right: 0;
+                line-height: normal;
+            }
+        }

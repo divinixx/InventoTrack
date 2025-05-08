@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+
+html, body, input, button {
+	font: normal .9rem/1.2rem 'Roboto', sans-serif;
+}
+
+#page-login {
+	display: flex;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	margin: 0 auto;
+	padding: 0;
+	justify-content: center;
+  align-items: center;
+	background: rgb(44,52,132);
+	background: radial-gradient(circle, rgba(44,52,132,1) 5%, rgba(139,50,161,1) 40%, rgba(44,52,132,1) 70%, rgba(0,5,55,1) 100%);
+	background-size: 600% 600%;
+	animation: login-bg-anim 20s ease infinite;
+}
+
+body#page-login:after {
+	display: none;
+	position: fixed;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.login-container {
+	text-align: center;
+	width: 300px;
+	max-width: 100%;
+	margin-top: -70px;
+}
+
+.login-container svg {
+	max-width: 100%;
+}
+
+.login-box {
+	background: #FFFFFF;
+	padding: 1rem 2rem 2rem;
+	border-radius: 16px;
+	box-shadow: 0 10px 50px -30px #000;
+}
+
+.login-form {
+	text-align: center;
+}
+
+h2 {
+	color: rgba(255, 255, 255, 0.5);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.33rem;
+	line-height: 1.33rem;
+	margin: 1.5rem 0;
+}
+
+a {
+	margin: 1.33rem 0 0;
+	display: block;
+	color: #FF006A;
+	text-decoration-skip: auto;
+}
+
+a:hover {
+	color: #CC0055;
+	text-decoration: none;
+}
+
+input {
+	display: block;
+	width: 100%;
+	margin-top: 1rem;
+	padding: 10px;
+	color: #414358;
+	background: #FFFFFF;
+	border: 1px solid #8E90A4;
+	box-sizing: border-box;
+	border-radius: 6px;
+	line-height: 20px;
+}
+
+input:hover {
+	border-color: #414358;
+}
+
+button {
+	display: block;
+	width: 100%;
+	margin-top: 2rem;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	line-height: 20px;
+	background: #FF006A;
+	border: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 0 0 1px inset rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.25);
+}
+
+button:hover {
+	background: #CC0055;
+}
+
+button:focus {
+	background: #990040;
+	box-shadow: none;
+}
+
+@keyframes login-bg-anim {
+    0% { background-position: 0% 100%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 100%; }
+}
+
+.legal {
+	position: fixed;
+	color: rgba(255, 255, 255, 0.5);
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-height: 470px) {
+
+	.legal,
+	h2 {
+		display: none;
+	}
+	
+	.login-container {
+		margin-top: 0;
+	}
+	
+	input,
+	button,
+	a {
+	margin-top: 0.5rem;
+	}
+
+}
