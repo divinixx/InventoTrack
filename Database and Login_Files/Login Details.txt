@@ -3,7 +3,7 @@ Database Name - inventory_management
 
 New Admin Register -  localhost/inventory_management/register.php
 
-Login Credential - Bohra
+Login Credential - Divyanshu
 Password - 123456
 
 
